@@ -1,0 +1,122 @@
+@import 'config';
+
+.wrapper {
+    min-height: 100%;
+}
+.header {
+    position: relative;
+    overflow: hidden;
+
+    min-height: 800px;
+    height: 1px;
+}
+
+.header_nav {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+
+    width: 38px;
+    height: 21px;
+
+    cursor: pointer;
+
+}
+
+.header__burger {
+    position: absolute;
+    top: 10px;
+    right: 0;
+
+    width: 36px;
+    height: 3px;
+
+    background-color: $primary-color;
+
+    &::before {
+    content: '';
+    position: absolute;
+    top: -9px;
+    right: 0;
+
+    width: 30px;
+    height: 3px;
+
+    background-color: $primary-color;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 9px;
+        right: 0;
+    
+        width: 30px;
+        height: 3px;
+    
+        background-color: $primary-color;
+            
+    }
+
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header__container {
+    position: relative;
+    height: 100%;
+}
+.header__ibg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.header__content {
+    position: absolute;
+    left: 0;
+    top: 200px;
+    
+}
+
+.header__title {
+
+}
+
+.header__subtitle {
+
+}
+
+.header__buttons {
+
+}
+
+.header__btn {
+
+}
+
+.header__social {
+
+}
+
+.social-header {
+
+}
+
+.social-header__text {
+
+}
+
+.social-header__line {
+
+}
+
+.social-header__icons {
+
+}
