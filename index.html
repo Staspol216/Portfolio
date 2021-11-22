@@ -36,27 +36,27 @@
               >Я web-разработчик из города Москва</span
             >
             <div class="header__buttons">
-              <button class="header__btn header__btn--active">Портфолио</button>
-              <button class="header__btn">Про меня</button>
+              <button class="btn btn--active header__btn">Портфолио</button>
+              <button class="btn header__btn">Про меня</button>
             </div>
           </div>
         </div>
-        <div class="header__social social-header">
-          <span class="social-header__text">Социальные сети</span>
-          <div class="social-header__line"></div>
-          <div class="social-header__icons">
+        <div class="header__social social">
+          <span class="social__text">Социальные сети</span>
+          <div class="social__line"></div>
+          <div class="social__icons">
             <img
-              class="social-header__image"
+              class="social__image"
               src="dist/img/header/social-icons/Github.svg"
               alt="Github"
             />
             <img
-              class="social-header__image"
+              class="social__image"
               src="dist/img/header/social-icons/Group.svg"
               alt="Insta"
             />
             <img
-              class="social-header__image"
+              class="social__image"
               src="dist/img/header/social-icons/Facebook.svg"
               alt="Facebook"
             />
@@ -66,16 +66,20 @@
       <main class="page">
         <section class="page__present present">
           <div class="container present__container">
-            <img
-              src="dist/img/present/Photo.jpg"
-              alt="Фото со мной"
-              class="present__photo"
-            />
+            <div class="present__image">
+              <img
+                  src="dist/img/present/Photo.jpg"
+                  alt="Фото со мной"
+                  class="present__photo"
+              />
+            </div>
             <div class="present__body">
-              <div class="present__title decor-title">
-                <span class="decor-title__text">Про меня</span>
+              <div class="present__header header-block header-block--left-position">
+                <div class="header-block__title decor-title">
+                    <span class="decor-title__text">Про меня</span>
+                </div>
+                <p class="header-block__subtitle header-block__subtitle--left-position">Меня зовут Александра</p>
               </div>
-              <p class="present__subtitle">Меня зовут Александра</p>
               <p class="present__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -241,57 +245,234 @@
             <div class="tools__container container">
                 <div class="tools__header header-block">
                     <div class="header-block__title decor-title">
-                        <span class="decor-title__text decor-title__text_center">Опыт</span>
+                        <span class="decor-title__text decor-title__text_center">Навыки</span>
                     </div>
                     <p class="header-block__subtitle">Что я использую в работе</p>
                 </div>
-                <div class="tools__body">
-                    <div class="tools_item item-tools">
+                <ul class="tools__list">
+                    <li class="tools_item item-tools">
                         <img src="dist/img/tools/html5.svg" alt="HTML5" class="item-tools__icon">
                         <span class="item-tools__subject">HTML5</span>
                         <div class="item-tools__text">Именно он создает каркас вашего сайта или приложения, 
                         а пятая версия позволит мне создавать 
                         более SEO-оптимизированную структуру вашего продукта</div>
-                    </div>
-                    <div class="tools_item item-tools">
+                    </li>
+                    <li class="tools_item item-tools">
                         <img src="dist/img/tools/css3.svg" alt="CSS3" class="item-tools__icon">
                         <div class="item-tools__subject">CSS3</div>
                         <div class="item-tools__text">Этот язык стилей позволяет мне создавать 
                         абсолютно любой внешний вид вашего сайта или приложения. 
                         Все ограничивается только вашей фантазией!</div>
-                    </div>
-                    <div class="tools_item item-tools">
+                    </li>
+                    <li class="tools_item item-tools">
                         <img src="dist/img/tools/JS.svg" alt="JS" class="item-tools__icon">
                         <div class="item-tools__subject">JS</div>
                         <div class="item-tools__text">Этот язык программирования позволяет оживить все 
                         что угодно: слайдеры, окна, подсказки, вкладки, получение данных от сервера и многое другое</div>
-                    </div>
-                    <div class="tools_item item-tools">
+                    </li>
+                    <li class="tools_item item-tools">
                         <img src="dist/img/tools/Jquery.svg" alt="jQuery" class="item-tools__icon">
                         <div class="item-tools__subject">Jquery</div>
                         <div class="item-tools__text">Библиотека Jquery позволит ускорить разработку. 
                         Без необходимости интегрировать в проект мы её не будем, но навык работы с ней присутствует</div>
-                    </div>
-                    <div class="tools_item item-tools">
+                    </li>
+                    <li class="tools_item item-tools">
                         <img src="dist/img/tools/React.svg" alt="React" class="item-tools__icon">
                         <div class="item-tools__subject">React</div>
                         <div class="item-tools__text">Эта библиотека позволяет создавать web-приложения. 
                         Мы можем создать максимально интерактивный продукт именно под ваши цели</div>
-                    </div>
-                    <div class="tools_item item-tools">
+                    </li>
+                    <li class="tools_item item-tools">
                         <img src="dist/img/tools/Node.js.svg" alt="Node.js" class="item-tools__icon">
                         <div class="item-tools__subject">Node.js</div>
                         <div class="item-tools__text">Эта платформа позволяет создавать бэкенд для вашего продукта - “мозги”, 
                         которые будут выполнять действия, которые пользователь не видит</div>
-                    </div>
-                    <div class="tools_item item-tools">
+                    </li>
+                    <li class="tools_item item-tools">
                         <img src="dist/img/tools/Mongo.db.svg" alt="MongoDB" class="item-tools__icon">
                         <div class="item-tools__subject">Mongo.db</div>
                         <div class="item-tools__text">Это нереляционная база данных, которая 
                         будет хранить данные вашего сайта или приложения</div>
+                    </li>
+                </ul>
+                <ul class="tools__record">
+                  <li class="tools__point point-tools">
+                    <div class="point-tools__title decor-title">
+                      <span class="decor-title__text">Создание сайтов</span>
                     </div>
-                </div>
+                    <span class="tools__percentage">100%</span>
+                    <div class="tools__bar">
+                      <div class="tools__progress"></div>
+                    </div>
+                  </li>
+                  <li class="tools__point point-tools">
+                    <div class="point-tools__title decor-title">
+                      <span class="decor-title__text">Создание приложений</span>
+                    </div>
+                    <span class="tools__percentage">85%</span>
+                    <div class="tools__bar">
+                      <div class="tools__progress tools__progress--perc85"></div>
+                    </div>
+                  </li>
+                  <li class="tools__point point-tools">
+                    <div class="point-tools__title decor-title">
+                      <span class="decor-title__text">Работа с данными</span>
+                    </div>
+                    <span class="tools__percentage">90%</span>
+                    <div class="tools__bar">
+                      <div class="tools__progress tools__progress--perc90"></div>
+                    </div>
+                  </li>
+                  <li class="tools__point point-tools">
+                    <div class="point-tools__title decor-title">
+                      <span class="decor-title__text">Креативность</span>
+                    </div>
+                    <span class="tools__percentage">75%</span>
+                    <div class="tools__bar">
+                      <div class="tools__progress tools__progress--perc75"></div>
+                    </div>
+                  </li>
+                  <li class="tools__point point-tools">
+                    <div class="point-tools__title decor-title">
+                      <span class="decor-title__text">Создание дизайна</span>
+                    </div>
+                    <span class="tools__percentage">90%</span>
+                    <div class="tools__bar">
+                      <div class="tools__progress tools__progress--perc90"></div>
+                    </div>
+                  </li>
+                  <li class="tools__point point-tools">
+                    <div class="point-tools__title decor-title">
+                      <span class="decor-title__text">Soft Skills</span>
+                    </div>
+                    <span class="tools__percentage">95%</span>
+                    <div class="tools__bar">
+                      <div class="tools__progress tools__progress--perc95"></div>
+                    </div>
+                  </li>
+                </ul>
             </div>
+        </section>
+        <section class="page__portfolio portfolio">
+          <div class="portfolio__container container">
+            <div class="portfolio__header header-block">
+              <div class="header-block__title decor-title">
+                  <span class="decor-title__text decor-title__text_center">Портфолио</span>
+              </div>
+              <p class="header-block__subtitle">Мои работы</p>
+          </div>
+          <div class="portfolio__content">
+            <div class="portfolio__item">
+              <img src="dist/img/portfolio/uber.png" alt="uber">
+            </div>
+            <div class="portfolio__item">
+              <img src="dist/img/portfolio/pulse.png" alt="uber">
+            </div>
+            <div class="portfolio__item">
+              <img src="dist/img/portfolio/bread.png" alt="uber">
+            </div>
+            <div class="portfolio__item portfolio__item--vertical-big">
+              <img src="dist/img/portfolio/plans.png" alt="uber">
+            </div>
+            <div class="portfolio__item">
+              <img src="dist/img/portfolio/ipad.png" alt="uber">
+            </div>
+            <div class="portfolio__item portfolio__item--horizontal-big">
+              <img src="dist/img/portfolio/mac.png" alt="uber">
+            </div>
+          </div>
+          </div>
+        </section>
+        <section class="page__price price">
+          <div class="price__container container">
+            <div class="price__header header-block">
+              <div class="header-block__title decor-title">
+                  <span class="decor-title__text decor-title__text_center">Прайс-лист</span>
+              </div>
+            </div>
+            <div class="price__body">
+              <ul class="price__column">
+                <li class="price__item item-price">
+                  <span class="item-price__title">Landing-page</span>
+                  <span class="item-price__value">от 8000 руб.</span>
+                  <span class="item-price__text">Одностраничный сайт для презентации услуг/товаров/...</span>
+                </li>
+                <li class="price__item item-price">
+                  <span class="item-price__title">Корпоративный сайт</span>
+                  <span class="item-price__value">от 20000 руб.</span>
+                  <span class="item-price__text">Сайт для вашего бизнеса или компании</span>
+                </li>
+                <li class="price__item item-price">
+                  <span class="item-price__title">Интернет-магазин</span>
+                  <span class="item-price__value">от 30000 руб.</span>
+                  <span class="item-price__text">Инструмент для ваших продаж в сети</span>
+                </li>
+              </ul>
+              <ul class="price__column">
+                <li class="price__item item-price">
+                  <span class="item-price__title">Web-приложение</span>
+                  <span class="item-price__value">от 28000 руб.</span>
+                  <span class="item-price__text">Приложение внутри браузера для лучшего комфорта</span>
+                </li>
+                <li class="price__item item-price">
+                  <span class="item-price__title">Android/IOS Приложение</span>
+                  <span class="item-price__value">от 25000 руб.</span>
+                  <span class="item-price__text">Приложение для смартфона любой ОС</span>
+                </li>
+                <li class="price__item item-price">
+                  <span class="item-price__title">Дизайн</span>
+                  <span class="item-price__value">Индивидуально</span>
+                  <span class="item-price__text">Создам дизайн для вашего сайта/приложения...</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="page__contacts contacts">
+          <div class="contacts__container container">
+            <div class="contacts__content">
+              <img
+                src="dist/img/present/Photo.jpg"
+                alt="Фото со мной"
+                class="contacts__photo"
+              />
+              <div class="contacts__body">
+                <div class="contacts__header header-block header-block--left-position">
+                  <div class="header-block__title decor-title">
+                      <span class="decor-title__text">Контакты</span>
+                  </div>
+                  <p class="header-block__subtitle header-block__subtitle--left-position">Свяжитесь со мной</p>
+                </div>
+                <div class="contacts__icons icons-price">
+                  <span class="icons-price__text">Любым удобным для вас способом:</span>
+                  <div class="icons-price__items">
+                    <img src="dist/img/contacts/icons/Facebook.svg" alt="icon" class="icon-price__img">
+                    <img src="dist/img/contacts/icons/Telegram.svg" alt="icon" class="icon-price__img">
+                    <img src="dist/img/contacts/icons/Instagram.svg" alt="icon" class="icon-price__img">
+                  </div>
+                </div>
+                <div class="contacts__inputs input-contact">
+                  <span class="input-contact__top-text">Или оставте ваши данные и я сама вам напишу:</span>
+                  <form class="input-contact__items">
+                    <div class="input-contact__form-shell input-contact__form-shell--name">
+                      <input type="text" class="input-contact__form input-contact__form">
+                    </div>
+                    <div class="input-contact__form-shell input-contact__form-shell--email">
+                      <input type="text" class="input-contact__form input-contact__form">
+                    </div>
+                    <div class="input-contact__form-shell input-contact__form-shell--area">
+                      <textarea type="text" class="input-contact__form"></textarea>
+                    </div>
+                    <div class="input-contact__checkbox">
+                      <input type="checkbox" id="politicaly"" class="input-contact__politicaly">
+                      <label for="politicaly" class="input-contact__labelText"> Я согласен(а) с <a href="#" class="input-contact__link">политикой конфеденциальности</a></label>
+                    </div>
+                    <button class="btn btn--active input-contact__btn">Отправить сообщение</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
       </main>
     </div>
