@@ -35,9 +35,15 @@
         <span class="social__text">Социальные сети</span>
         <div class="social__line"></div>
         <div class="social__icons">
-          <img class="social__image" src="dist/img/header/social-icons/Github.svg" alt="Github" />
-          <img class="social__image" src="dist/img/header/social-icons/Group.svg" alt="Insta" />
-          <img class="social__image" src="dist/img/header/social-icons/Facebook.svg" alt="Facebook" />
+          <svg class="social__image">
+            <use xlink:href="dist/img/sprite.svg#github"></use>
+          </svg>
+          <svg class="social__image">
+            <use xlink:href="dist/img/sprite.svg#insta"></use>
+          </svg>
+          <svg class="social__image">
+            <use xlink:href="dist/img/sprite.svg#facebook"></use>
+          </svg>
         </div>
       </div>
     </header>
@@ -56,7 +62,7 @@
                     header-block__subtitle header-block__subtitle--left-position
                   ">
                 Меня зовут Александра
-            </h2>
+              </h2>
             </div>
             <p class="present__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -71,7 +77,11 @@
               <div class="present__item item-present">
                 <div class="item-present__icon decor-icon">
                   <div class="decor-icon__circle">
-                    <img src="dist/img/present/icons/Web.svg" alt="пикча" class="decor-icon__image" />
+                    <div class="decor-icon__inner">
+                      <svg class="decor-icon__image">
+                        <use xlink:href="dist/img/sprite.svg#web"></use>
+                      </svg>
+                    </div>
                   </div>
                 </div>
                 <div class="item-present__content">
@@ -86,7 +96,11 @@
               <div class="present__item item-present">
                 <div class="item-present__icon decor-icon">
                   <div class="decor-icon__circle">
-                    <img src="dist/img/present/icons/dollar.svg" alt="пикча" class="decor-icon__image" />
+                    <div class="decor-icon__inner">
+                      <svg class="decor-icon__image">
+                        <use xlink:href="dist/img/sprite.svg#dollar"></use>
+                      </svg>
+                    </div>
                   </div>
                 </div>
                 <div class="item-present__content">
@@ -101,7 +115,11 @@
               <div class="present__item item-present">
                 <div class="item-present__icon decor-icon">
                   <div class="decor-icon__circle">
-                    <img src="dist/img/present/icons/UI.svg" alt="пикча" class="decor-icon__image" />
+                    <div class="decor-icon__inner">
+                      <svg class="decor-icon__image">
+                        <use xlink:href="dist/img/sprite.svg#ui"></use>
+                      </svg>
+                    </div>
                   </div>
                 </div>
                 <div class="item-present__content">
@@ -131,7 +149,11 @@
               <div class="skills__item item-skill">
                 <div class="item-skill__icon decor-icon">
                   <div class="decor-icon__circle">
-                    <img src="dist/img/skills/icon/University.svg" alt="пикча" class="decor-icon__image" />
+                    <div class="decor-icon__inner">
+                      <svg class="decor-icon__image">
+                        <use xlink:href="dist/img/sprite.svg#university"></use>
+                      </svg>
+                    </div>
                   </div>
                 </div>
                 <div class="item-skill__subtitle">
@@ -150,7 +172,11 @@
               <div class="skills__item item-skill">
                 <div class="item-skill__icon decor-icon">
                   <div class="decor-icon__circle">
-                    <img src="dist/img/skills/icon/Courses.svg" alt="пикча" class="decor-icon__image" />
+                    <div class="decor-icon__inner">
+                      <svg class="decor-icon__image">
+                        <use xlink:href="dist/img/sprite.svg#courses"></use>
+                      </svg>
+                    </div>
                   </div>
                 </div>
                 <div class="item-skill__subtitle">
@@ -170,7 +196,11 @@
               <div class="skills__item item-skill">
                 <div class="item-skill__icon decor-icon">
                   <div class="decor-icon__circle">
-                    <img src="dist/img/skills/icon/Developer.svg" alt="пикча" class="decor-icon__image" />
+                    <div class="decor-icon__inner">
+                      <svg class="decor-icon__image">
+                        <use xlink:href="dist/img/sprite.svg#develop"></use>
+                      </svg>
+                    </div>
                   </div>
                 </div>
                 <div class="item-skill__subtitle">
@@ -189,7 +219,11 @@
               <div class="skills__item item-skill">
                 <div class="item-skill__icon decor-icon">
                   <div class="decor-icon__circle">
-                    <img src="dist/img/skills/icon/designer.svg" alt="пикча" class="decor-icon__image" />
+                    <div class="decor-icon__inner">
+                      <svg class="decor-icon__image">
+                        <use xlink:href="dist/img/sprite.svg#design"></use>
+                      </svg>
+                    </div>
                   </div>
                 </div>
                 <div class="item-skill__subtitle">
@@ -462,8 +496,7 @@
                     <textarea class="input-contact__form"></textarea>
                   </div>
                   <div class="input-contact__checkbox">
-                    <input type="checkbox" id="politicaly"
-                      class=" input-contact__politicaly">
+                    <input type="checkbox" id="politicaly" class=" input-contact__politicaly">
                     <label for="politicaly" class="input-contact__labelText">
                       Я согласен(а) с
                       <a href="#" class="input-contact__link">политикой конфеденциальности</a></label>
